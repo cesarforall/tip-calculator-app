@@ -32,6 +32,8 @@ body {
 .inactive {
 	display: none;
 }
+
+/* Main */
 .main {
 	width: 100%;
 	min-width: 320px;
@@ -39,6 +41,12 @@ body {
 	background-color: var(--white);
 	border-radius: 20px;
 }
+
+/* Inputs */
+.num-of-people {
+	margin-top: 40px;
+}
+
 form > label,
 .select-tip legend,
 .num-of-people label {
@@ -68,6 +76,41 @@ form > label,
 	background-origin: content-box;
 	background-position: left;
 }
+
+/* Tips */
+.select-tip {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	margin-top: 36px;
+	padding: 0;
+	border: none;
+}
+.select-tip legend {
+	
+	margin-bottom: 16px;
+}
+.tip-input {
+	padding: 8px 0;
+	background-color: var(--very-dark-cyan);
+	font-size: 22px;
+	text-align: center;
+	color: var(--white);
+}
+.tip-input label {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.tip-input input {
+	display: none;
+}
+.tip-input,
+.custom-tip {
+	border-radius: 5px;
+}
+
+/* Attribution */
 .attribution {
 	font-size: 11px;
 	text-align: center;
