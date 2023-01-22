@@ -5,6 +5,7 @@
 	--light-grayish-cyan: hsl(185, 41%, 84%);
 	--very-light-grayish-cyan: hsl(189, 41%, 97%);
 	--white: hsl(0, 0%, 100%);
+	--green: hsl(172deg 67% 45%);
 
 	/* Layout */
 	/* - Mobile: 375px */
@@ -87,7 +88,6 @@ form > label,
 	border: none;
 }
 .select-tip legend {
-	
 	margin-bottom: 16px;
 }
 .tip-input {
@@ -107,6 +107,51 @@ form > label,
 }
 .tip-input,
 .custom-tip {
+	border-radius: 5px;
+}
+
+/* Total Section */
+.total-section {
+	margin-top: 30px;
+	padding: 30px 20px 20px;
+	background-color: var(--very-dark-cyan);
+	border-radius: 14px;
+}
+.total-section article {
+	display: flex;
+	justify-content: space-between;
+}
+.total-section article:nth-child(2) {
+	margin-top: 16px;
+}
+.total-section .tip-amount h2,
+.total-section .total h2 {
+	margin: 0;
+	font-size: 16px;
+	color: var(--white);
+}
+.total-section .tip-amount p,
+.total-section .total p {
+	margin: 0;
+	font-size: 14px;
+	color: var(--grayish-cyan);
+}
+.total-section .tip-amount-value,
+.total-section .total-value {
+	margin: 0;
+	font-size: 30px;
+	color: var(--green);
+}
+.total-section button {
+	display: inline-block;
+	width: 100%;
+	margin-top: 30px;
+	padding: 10px 0;
+	background-color: var(--green);
+	font-size: 20px;
+	color: var(--very-dark-cyan);
+	text-transform: uppercase;
+	border: none;
 	border-radius: 5px;
 }
 
