@@ -27,6 +27,46 @@ html * {
 }
 body {
 	margin: 0;
+	background-color: var(--light-grayish-cyan);
+}
+.inactive {
+	display: none;
+}
+.main {
+	width: 100%;
+	min-width: 320px;
+	padding: 30px;
+	background-color: var(--white);
+	border-radius: 20px;
+}
+form > label,
+.select-tip legend,
+.num-of-people label {
+	color: var(--dark-grayish-cyan);
+}
+.input-number {
+	display: block;
+	width: 100%;
+	padding: 5px 14px;
+	background-color: var(--very-light-grayish-cyan);
+	font-size: 24px;
+	text-align: end;
+	color: var(--very-dark-cyan);
+	border: none;
+	border-radius: 5px;
+}
+#bill {
+	background-image: url('./images/icon-dollar.svg');
+}
+#num-of-people {
+	background-image: url('./images/icon-person.svg');
+}
+#bill,
+#num-of-people {
+	margin-top: 6px;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-position: left;
 }
 .attribution {
 	font-size: 11px;
