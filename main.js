@@ -45,13 +45,12 @@ function checkValues() {
 }
 
 function splitBill() {
-	const bill = data.bill;
-	const tip = data.tip;
-	const numOfPeople = data.numOfPeople;
+	const bill = parseFloat(data.bill);
+	const tip = parseFloat(data.tip);
+	const numOfPeople = parseInt(data.numOfPeople);
 	let tipAmount = bill * (tip / 100);
 	let tipPerPerson = (tipAmount / numOfPeople).toFixed(2);
 	let totalPerPerson = ((bill + tipAmount) / numOfPeople).toFixed(2);
-    
 	return { tipPerPerson, totalPerPerson };
 }
 function displaySplittedBill(splittedBill) {
