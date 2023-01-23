@@ -33,7 +33,20 @@ body {
 .inactive {
 	display: none;
 }
+h1 {
+	margin: 0;
+	width: 0;
+	height: 0;
+	color: transparent;
+}
 
+/* Header */
+.header {
+	display: flex;
+}
+.header img {
+	margin: 50px auto 40px;
+}
 /* Main */
 .main {
 	width: 100%;
