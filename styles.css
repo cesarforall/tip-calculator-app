@@ -177,6 +177,7 @@ form > label,
 
 /* Attribution */
 .attribution {
+	padding: 30px;
 	font-size: 11px;
 	text-align: center;
 }
